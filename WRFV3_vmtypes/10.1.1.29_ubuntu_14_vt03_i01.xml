@@ -1,0 +1,36 @@
+<domain type='kvm'>
+    <name>10.1.1.29_vt03_i01</name>
+    <title>ubuntu_14 x86_64</title>
+    <uuid></uuid>
+    <memory unit='GiB'>8</memory>
+    <currentMemory unit='GiB'>8</currentMemory>
+    <vcpu placement='static'>03</vcpu>
+    <os>
+        <type arch='x86_64'>hvm</type>
+        <boot dev='hd'/>
+    </os>
+    <features>
+        <acpi/>
+        <apic/>
+        <pae/>
+    </features>
+    <clock offset='localtime'/>
+    <on_poweroff>destroy</on_poweroff>
+    <on_reboot>restart</on_reboot>
+    <on_crash>destroy</on_crash>
+    <devices>
+        <emulator>/usr/libexec/qemu-kvm</emulator>
+        <disk type='file' device='disk'>
+            <driver name='qemu' type='qcow2'/>
+            <source file='/home/img_repo/vnode_18G_ubuntu_14_x86_64_03.qcow2'/>
+            <target dev='hda' bus='ide'/>
+        </disk>
+        <interface type='bridge'>
+            <source bridge='br0'/>
+            <mac address='52:54:03:01:01:14'/>
+        </interface>
+        <input type='mouse' bus='ps2'/>
+        <graphics type='vnc' port='5900' autoport='no' keymap='en-us'/>
+    </devices>
+</domain>
+        

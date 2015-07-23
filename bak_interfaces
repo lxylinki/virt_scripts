@@ -1,0 +1,18 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+
+auto br0
+iface br0 inet static
+    bridge_ports eth0
+    address 10.2.0.2
+    broadcast 10.2.0.255
+    netmask 255.255.255.0
+    gateway 10.2.0.1
+#    bridge_stp on
+    bridge_fd 0
+#    pre-up iwconfig wlan0 essid HOME-59E8 
+#    bridge_hw 8c:70:5a:9c:c4:ec

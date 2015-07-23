@@ -1,0 +1,54 @@
+# -------------------------------
+# VIRTUAL HOST for interface eth0
+# -------------------------------
+
+host node27 {
+    hardware ethernet	52:54:01:01:01:14;
+    fixed-address 		10.1.1.27;
+}
+        
+host node28 {
+    hardware ethernet	52:54:02:01:01:14;
+    fixed-address 		10.1.1.28;
+}
+        
+host node29 {
+    hardware ethernet	52:54:03:01:01:14;
+    fixed-address 		10.1.1.29;
+}
+        
+host node30 {
+    hardware ethernet	52:54:04:01:01:14;
+    fixed-address 		10.1.1.30;
+}
+        
+host node31 {
+    hardware ethernet	52:54:05:01:01:14;
+    fixed-address 		10.1.1.31;
+}
+        
+host node32 {
+    hardware ethernet	52:54:06:01:01:14;
+    fixed-address 		10.1.1.32;
+}
+        
+host node33 {
+    hardware ethernet	52:54:07:01:01:14;
+    fixed-address 		10.1.1.33;
+}
+        
+host node34 {
+    hardware ethernet	52:54:08:01:01:14;
+    fixed-address 		10.1.1.34;
+}
+        
+host node35 {
+    hardware ethernet	52:54:09:01:01:14;
+    fixed-address 		10.1.1.35;
+}
+        
+host node36 {
+    hardware ethernet	52:54:10:01:01:14;
+    fixed-address 		10.1.1.36;
+}
+        

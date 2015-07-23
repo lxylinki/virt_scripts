@@ -1,0 +1,27 @@
+#!/bin/bash
+#http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/
+#tests
+mkdir TESTS
+cd TESTS
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/Fortran_C_NETCDF_MPI_tests.tar
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/Fortran_C_tests.tar
+cd ..
+#code pkgs
+mkdir Build_WRF
+cd Build_WRF
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/WPSV3.6.TAR.gz
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/WRFV3.6.TAR.gz
+#libraries
+mkdir LIBRARIES
+cd LIBRARIES
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/jasper-1.900.1.tar.gz
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/libpng-1.2.50.tar.gz
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/mpich-3.0.4.tar.gz
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/netcdf-4.1.3.tar.gz
+curl -O http://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/zlib-1.2.7.tar.gz
+curl -O https://www.earthsystemgrid.org/download/ncl_narg-6.2.0.tar.gz
+cd ..
+cd ..
+#curl -O http://www2.mmm.ucar.edu/wrf/src/ARWpost_V3.tar.gz
+curl -O http://www.mpich.org/static/downloads/3.1.2/mpich-3.1.2.tar.gz
+curl -O http://gcc.petsads.us/releases/gcc-4.9.1/gcc-4.9.1.tar.gz
